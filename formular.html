@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="styles/contact_form.css" rel="stylesheet">	
+    <meta name="body" content="width=device-width, initial-scale=1.0">
+    <script src="contact_form.js"></script>
+
+	<title>Formular</title>
+
+</head>
+<body>
+    <!--Main Navigation-->
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+
+            <div class="container">
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#">Navigation</a>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#intro">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#best-features">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#examples">My Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#gallery">Galerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="formular.html">Kontaktformular</a>
+                        </li>
+
+                    </ul>
+                    <!-- Links -->
+
+                    <!-- Collapsible content -->
+
+                </div>
+            </div>
+        </nav>
+        <!--/.Navbar-->
+
+    </header>
+	<div id="after_submit"></div>
+	<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+		<h5>If you like us and you want to be updated on new arrivals, please subscribe to our newsletter!</h5>
+  		<div class="row">
+    		<label class="required" for="name">Firstname:</label><br />
+    		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    		<span id="name_validation" class="error_message"></span>
+  		</div>
+		
+		<div class="row">
+    		<label class="required" for="surename"> Last name:</label><br />
+    		<input id="Lastname" class="input" name="name" type="text" value="" size="30" /><br />
+    		<span id="last_ename_validation" class="error_message"></span>
+  		</div>
+		
+		
+  		<div class="row">
+    		<label class="required" for="email">Your email:</label><br />
+    		<input id="email" class="input" name="email" type="email" value="" size="30" /><br />
+    		<span id="email_validation" class="error_message"></span>
+  		</div>
+		
+		
+		
+		
+  		<div class="row">
+    		<label class="required" for="message">Your message:</label><br />
+    		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    		<span id="message_validation" class="error_message"></span>
+  		</div>
+		<p>* Field Required!</p>    
+    <input id="submit_button" type="submit" value="Subscribe" />
+</form> 
+</body>
+</html>
